@@ -1,0 +1,54 @@
+// Estilos base para el body del sitio
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  // Estilo general para enlaces
+
+  a {
+    color: #666;
+    text-decoration: underline;
+  }
+}
+// Títulos dentro de secciones (espaciado inferior)
+
+section {
+  h1,
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Menu de navegación principal */
+
+.navbar {
+  background-color: #000;
+
+  img {
+    height: 70px;
+  }
+
+  .nav-item {
+    a {
+      color: orange;
+      font-size: 18px;
+
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      &.nav-link.active {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+  // Botón de hamburguesa en móviles
+
+  .navbar-toggler {
+    background-color: orange;
+    border-color: #f4f4f4;
+  }
+}

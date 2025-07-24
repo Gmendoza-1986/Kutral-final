@@ -1,0 +1,41 @@
+// Mixin reutilizable para aplicar estilos de imagen de fondo tipo "hero"
+
+@mixin hero($image-path, $bg-size, $bg-position, $height) {
+  background-image: url(#{$image-path}); 
+  background-size: $bg-size;
+  background-position: $bg-position;
+  height: $height;
+}
+
+// Secciones que reutilizan el mixin con distintas imágenes de fondo
+
+.hero-home {
+  @include hero("../assets/img/hero_image.jpg", cover, center, 60vh);
+}
+.hero-contacto {
+  @include hero("../assets/img/hero_contacto.png", cover, center, 60vh);
+}
+.hero-news {
+  @include hero("../assets/img/hero_news.png", cover, center, 60vh);
+}
+.hero-dt {
+  @include hero("../assets/img/hero_dt.png", cover, center, 60vh);
+}
+.hero-horarios {
+  @include hero("../assets/img/hero_horario.png", cover, center, 60vh);
+}
+
+// Título animado con efecto de sombra múltiple
+
+h1 {
+  &.display-4.animate__animated.animate__backInDown {
+    text-shadow: 0 1px 0 #c7c5c5, 0 1px 0 #b1b1b1, 0 3px 0 #605f5f, 0 4px 0 #aaa, 0 4px 0 #575757, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+// Párrafo animado con sombra de texto
+
+p {
+  &.lead.animate__animated.animate__backInLeft {
+    text-shadow: 2px 2px 9px #000;
+  }
+}

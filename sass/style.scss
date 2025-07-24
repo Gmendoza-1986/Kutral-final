@@ -1,0 +1,18 @@
+// Importa todos los archivos parciales del diseño principal
+
+@use "header";
+@use "hero-image";
+@use "home";
+@use "entrenadores";
+@use "horarios";
+@use "contacto";
+@use "noticias";
+@use "footer";
+
+// Reset básico para todos los elementos
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

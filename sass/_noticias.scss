@@ -1,0 +1,71 @@
+/* noticias */
+// Contenedor principal de las secciones de noticias
+.noticias-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  // Noticias destacadas de actualidad
+
+  .trending-news {
+    flex: 1;
+    background-color: #e5e7eb;
+    padding: 20px;
+    border-radius: 10px;
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    article {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      background: #ccc;
+      border-radius: 5px;
+    }
+
+    h3 {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+  }
+  // Noticia principal destacada visualmente
+
+  .featured-news {
+    flex: 1;
+    background-color: #4b5563;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    // Botón destacado sobre la imagen
+
+    button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #6b7280;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-size: 1.4em;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
